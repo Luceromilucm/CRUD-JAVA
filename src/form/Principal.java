@@ -275,7 +275,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         Eliminar();
-        listar();
+        
         nuevo();
     }//GEN-LAST:event_btnEliminarActionPerformed
 
@@ -481,6 +481,7 @@ void Eliminar() {
             // Mostrar un mensaje de éxito después de eliminar el estudiante y limpiar la tabla
             JOptionPane.showMessageDialog(null, "Usuario Eliminado");
             limpiarTabla(model);
+            listar();
         } catch (Exception e) {
             // Manejar cualquier excepción que pueda ocurrir durante la ejecución
         }
